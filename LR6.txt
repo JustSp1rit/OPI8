@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip>
+#include "stdio.h"
+#include "math.h" 
+
+using namespace std;
+int main()
+{
+double b, h, Y, x;
+
+cout << "Введіть початкове x:\n";
+cin >> x;
+cout << "Введіть кінцеве x:\n";
+cin >> b;
+cout << "Введіть крок за x:\n";
+cin >> h;
+while (x <= b)
+{
+Y = log(pow(x,3)) + 2*cos(x) - 2;
+cout << "x = " << x << "\nY = " << Y << endl;
+x += h;
+}
+
+return 0;
+}
